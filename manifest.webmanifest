@@ -1,7 +1,11 @@
 {
   "name": "Tech-Noter",
   "short_name": "Tech-Noter",
+<<<<<<< HEAD
   "start_url": "https://solarstudent121.github.io/Tech-Noter",
+=======
+  "start_url": "https://solarstudent121.github.io/Tech-Noter/",
+>>>>>>> 27455993418e09203fc26f374105d663e04e5494
   "display": "standalone",
   "description": "Tech-Noter",
   "lang": "en",
