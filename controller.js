@@ -42,11 +42,17 @@ function right() {
     document.getElementById("editor").style.textAlign = "right";
 }
 
+function italic() {
+    document.getElementById("editor").style.fontWeight = "italic";
+}
+
 window.onload = () => {
 
     document.getElementById("editor").style.textAlign = "left";
 
     document.getElementById('bold').addEventListener('click', bold)
+
+    document.getElementById('bold').addEventListener('click', italic)
 
     document.getElementById('a-l').addEventListener('click', left)
 
