@@ -2,6 +2,9 @@ use = 'strict';
 
 navigator.serviceWorker.register("sw.js")
 
+var editor = document.getElementById("editor");
+
+
 function download(filename, content) {
 
     const element = document.createElement('a');
@@ -21,7 +24,11 @@ function download(filename, content) {
 };
 
 function bold() {
-    document.getElementById("editor").style.fontWeight = "bold";
+    if( editor.style.fontWeight == "bolder" ) {
+        editor.style.fontWeight = "normal";
+    } else {
+        editor.style.fontWeight = "bolder";
+    }
 }
 
 function clear() {
@@ -43,7 +50,11 @@ function right() {
 }
 
 function italic() {
-    document.getElementById("editor").style.fontWeight = "italic";
+    if( editor.style.fontStyle == "italic" ) {
+        editor.style.fontStyle = "normal";
+    } else {
+        editor.style.fontStyle = "italic";
+    }
 }
 
 function underline() {
@@ -52,11 +63,11 @@ function underline() {
 
 window.onload = () => {
 
-    document.getElementById("editor").style.textAlign = "left";
+    editor.style.textAlign = "left";
 
     document.getElementById('bold').addEventListener('click', bold)
 
-    document.getElementById('bold').addEventListener('click', italic)
+    document.getElementById('italic').addEventListener('click', italic)
 
     document.getElementById('a-l').addEventListener('click', left)
 
