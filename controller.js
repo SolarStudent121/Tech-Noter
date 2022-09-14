@@ -46,6 +46,10 @@ function italic() {
     document.getElementById("editor").style.fontWeight = "italic";
 }
 
+function underline() {
+    
+}
+
 window.onload = () => {
 
     document.getElementById("editor").style.textAlign = "left";
