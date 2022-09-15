@@ -1,8 +1,5 @@
 use = 'strict';
 
-navigator.serviceWorker.register("sw.js")
-
-
 function download(filename, content) {
 
     const element = document.createElement('a');
