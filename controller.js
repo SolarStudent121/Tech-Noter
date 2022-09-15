@@ -2,8 +2,6 @@ use = 'strict';
 
 navigator.serviceWorker.register("sw.js")
 
-var editor = document.getElementById("editor");
-
 
 function download(filename, content) {
 
@@ -24,10 +22,10 @@ function download(filename, content) {
 };
 
 function bold() {
-    if( editor.style.fontWeight == "bolder" ) {
-        editor.style.fontWeight = "normal";
+    if( document.getElementById('editor').style.fontWeight == "bold" ) {
+        document.getElementById('editor').style.fontWeight = "normal";
     } else {
-        editor.style.fontWeight = "bolder";
+        document.getElementById('editor').style.fontWeight = "bold";
     }
 }
 
@@ -50,21 +48,16 @@ function right() {
 }
 
 function italic() {
-    if( editor.style.fontStyle == "italic" ) {
-        editor.style.fontStyle = "normal";
+    if (document.getElementById('editor').style.fontStyle == "italic" ) {
+        document.getElementById('editor').style.fontStyle= "normal";
     } else {
-        editor.style.fontStyle = "italic";
+        document.getElementById('editor').style.fontStyle = "italic";
     }
 }
 
-function underline() {
-    
-}
+
 
 window.onload = () => {
-
-    editor.style.textAlign = "left";
-
     document.getElementById('bold').addEventListener('click', bold)
 
     document.getElementById('italic').addEventListener('click', italic)

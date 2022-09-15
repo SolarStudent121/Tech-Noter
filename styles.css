@@ -14,3 +14,7 @@ textarea {
      align-items: center;
      justify-content: center;
  }
+
+body {
+    display: -ms-flexbox;
+}
