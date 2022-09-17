@@ -1,8 +1,5 @@
 use = 'strict';
 
-navigator.serviceWorker.register("sw.js")
-
-
 function download(filename, content) {
 
     const element = document.createElement('a');
@@ -30,9 +27,9 @@ function bold() {
 }
 
 function clear() {
-    document.getElementById("editor").value = "";
     document.getElementById("editor").style.fontWeight = "normal";
     document.getElementById("editor").style.textAlign = "left";
+    document.getElementById('editor').style.fontStyle = "normal";
 }
 
 function left() {
@@ -54,8 +51,6 @@ function italic() {
         document.getElementById('editor').style.fontStyle = "italic";
     }
 }
-
-
 
 window.onload = () => {
     document.getElementById('bold').addEventListener('click', bold)

@@ -1,0 +1,34 @@
+{
+  "name": "Tech-Noter",
+  "short_name": "Tech Noter",
+  "start_url": "https://solarstudent121.github.io/Tech-Noter/",
+  "display": "standalone",
+  "description": "Tech-Noter - Home",
+  "lang": "en",
+  "dir": "auto",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "any",
+  "screenshots": [
+    {
+      "src": "screenshots/Screenshot.png",
+      "sizes": "1343x613",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Editor",
+      "url": "https://solarstudent121.github.io/Tech-Noter/editor",
+      "description": "Tech-Noter - Editor"
+    }
+  ],
+  "icons": [
+    {
+        "src": "icons/icon.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+    }
+  ]
+}

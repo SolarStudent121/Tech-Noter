@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="Content-Security-Policy"
-            content="default-src 'self'; img-src 'self'; object-src 'none'; script-src 'self'; style-src 'self';">
-        <link rel="manifest" href="manifest.json">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech-Noter - Home</title>
-        <link rel="stylesheet" href="bootstrap/bootstrap-5.2.1-dist/css/bootstrap.min.css">
-        <link rel="manifest" href="./manifest.json">
-        <link rel="stylesheet" href="./styles.css">
-        <base href="Tech-Noter">
-        <link rel="icon" href="./icons/icon.png">
-        <meta name="description" content="Tech-Noter - Home">
-    </head>
-
-    <body>
-        <script src="bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
-        <script src="./home.js" defer></script>
-        <div class="container.fluid bg-black p-5 my-5">
-            <br>
-            <h1 class="display-2 text-white" id="title">Tech-Noter</h1>
-            <h6 class="lead text-white " for="title">the text editor on the web...</h6>
-            <br>
-            <button type="button" id="redir" class="btn btn-primary btn-lg">Jump to editor</button>
-            <br>
-        </div>
-    </body>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self';">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Noter</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./styles.css">
+    <base href="Tech-Noter">
+    <link rel="icon" href="./icons/icon.png">
+    <meta name="description" content="Tech-Noter">
+</head>
+<body>
+    <script src="./load.js"></script>
+</body>
 </html>

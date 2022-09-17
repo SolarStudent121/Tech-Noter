@@ -12,9 +12,8 @@
   "screenshots": [
     {
       "src": "screenshots/Screenshot.png",
-      "sizes": "2880x1800",
-      "type": "image/png",
-      "description": "A screenshot of the home page"
+      "sizes": "1343x613",
+      "type": "image/png"
     }
   ],
   "shortcuts": [

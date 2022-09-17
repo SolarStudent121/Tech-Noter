@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" role="application">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self';">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Noter - Editor</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-icons-1.9.1/bootstrap-icons.css">
+    <script src="./controller.js"></script>
+    <meta name="description" content="Tech-Noter - Editor">
+    <link rel="icon" href="../icons/icon.png">
+    <link rel="apple-touch-icon" href="../icons/icon.png">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="../home">
+                <img src="../icons/icon.png" width="30" height="30" class="d-inline-block align-text-top">
+                Tech-Noter</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../docs">Docs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script defer src="../bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+
+    <div class="container.fluid bg-black p-5">
+        <div class="col-p-4" spellcheck="true" for="editor">
+            <input type="text" id="docname" class="form-input bg-dark  rounded-1  h5 .d-flex text-white" placeholder="Enter file name..."
+                value="doc" required></input>
+            <button class="btn btn-primary" id="save" type="submit">Download</button>
+            <button type="button" id="bold" class="btn btn-dark">B</button>
+            <button type="button" id="italic" class="btn btn-dark">I</button>
+            <button type="reset" id="a-l" class="bi-text-left btn btn-dark" title="Align-left"></button>
+            <button type="reset" id="a-c" class="bi-text-center btn btn-dark" title="Align-center"></button>
+            <button type="reset" id="a-r" class="bi-text-right btn btn-dark" title="Align-right"></button>
+            <button type="reset" id="clear" class="btn btn-dark">Reset text</button>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-1 col-sm-4">
+            </div>
+            <div class="col-md-10 col-sm-9">
+                <div class="editpad">
+                    <textarea id="editor" class="form-input rounded-3 " cols="200" rows="20" contenteditable="true"
+                        placeholder="Enter text..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="container.fluid text-center bg-black">
+            <br>
+            <p class="text-white">Copyright (c) 2022 SolarStudent121</p>
+            <br>
+        </div>
+    </footer>
+</body>
+</html>

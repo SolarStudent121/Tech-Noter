@@ -1,4 +1,8 @@
 {
+  "name": "tech-noter",
+  "author": "Abhinav Shetty R",
+  "license": "MIT",
+  "version": "1.0.0",
   "dependencies": {
     "workbox-precaching": "^6.5.4"
   }

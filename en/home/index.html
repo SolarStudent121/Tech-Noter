@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" role="contentinfo">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self';font-src 'self';style-src 'self'" ;>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech-Noter - Home</title>
+        <link rel="stylesheet" href="../bootstrap/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+
+        <link rel="manifest" href="../manifest.webmanifest">
+        <link rel="stylesheet" href="./styles.css">
+        <base href="Tech-Noter">
+        <link rel="icon" href="../icons/icon.png">
+        <meta name="description" content="Tech-Noter - Home">
+        <link rel="apple-touch-icon" href="../icons/icon.png">
+
+    </head>
+
+    <body id="homepage">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="../home">
+                    <img src="../icons/icon.png" width="30" height="30" class="d-inline-block align-text-top">
+                    Tech-Noter</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../docs">Docs</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script src="../bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+        <script src="./home.js" defer></script>
+        <div class="container.fluid bg-black p-5 my-5">
+            <br>
+            <h1 class="display-2 text-white" id="title">Tech-Noter</h1>
+            <h6 class="lead text-white " for="title">the text editor on the web...</h6>
+            <br>
+            <button type="button" id="redir" class="btn btn-primary btn-lg">Jump to editor</button>
+            <br>
+        </div>
+        <div class="container.fluid p-5 text-center bg-dark">
+            <img id='screenshot' src="../screenshots/Screenshot.png" class="img.thumbnail rounded" alt="Screenshot-1"
+                width="800" height="400">
+            <br>
+            <h2 class="lead text-white p-2">A fast and responsive text editor...</h2>
+        </div>
+        <br>
+        <footer>
+            <div class="container.fluid text-center bg-black">
+                <br>
+                <p class="text-white">Copyright (c) 2022 SolarStudent121</p>
+                <br>
+            </div>
+        </footer>
+</html>
