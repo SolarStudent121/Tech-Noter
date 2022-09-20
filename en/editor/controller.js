@@ -1,4 +1,6 @@
-use = 'strict';
+'use strict'
+
+const editor = document.getElementById('editor');
 
 function download(filename, content) {
 
@@ -19,38 +21,49 @@ function download(filename, content) {
 };
 
 function bold() {
-    if( document.getElementById('editor').style.fontWeight == "bold" ) {
-        document.getElementById('editor').style.fontWeight = "normal";
+    if (editor.style.fontWeight == "bold") {
+        editor.style.fontWeight = "normal";
     } else {
-        document.getElementById('editor').style.fontWeight = "bold";
+        editor.style.fontWeight = "bold";
     }
 }
 
 function clear() {
-    document.getElementById("editor").style.fontWeight = "normal";
-    document.getElementById("editor").style.textAlign = "left";
-    document.getElementById('editor').style.fontStyle = "normal";
+    editor.style.fontWeight = "normal";
+    editor.style.textAlign = "left";
+    editor.style.fontStyle = "normal";
 }
 
 function left() {
-    document.getElementById("editor").style.textAlign = "left";
+    editor.style.textAlign = "left";
 }
 
 function center() {
-    document.getElementById("editor").style.textAlign = "center";
+    editor.style.textAlign = "center";
 }
 
 function right() {
-    document.getElementById("editor").style.textAlign = "right";
+    editor.style.textAlign = "right";
 }
 
 function italic() {
-    if (document.getElementById('editor').style.fontStyle == "italic" ) {
-        document.getElementById('editor').style.fontStyle= "normal";
+    if (editor.style.fontStyle == "italic") {
+        editor.style.fontStyle = "normal";
     } else {
-        document.getElementById('editor').style.fontStyle = "italic";
+        editor.style.fontStyle = "italic";
     }
 }
+
+$(document).ready(function () {
+    function hidePreloader() {
+        var preloader = $('#preloader');
+        preloader.fadeOut(500);
+    }
+    hidePreloader();
+    document.getElementById('nav').hidden = false;
+    document.getElementById('body').hidden = false;
+    document.getElementById('footer').hidden = false;
+});
 
 window.onload = () => {
     document.getElementById('bold').addEventListener('click', bold)
@@ -67,17 +80,17 @@ window.onload = () => {
 
     document.getElementById('save').addEventListener('click', () => {
 
-        const filename = document.getElementById('docname').value + '.txt';
+        const fname = document.getElementById('docname').value + '.txt';
 
-        const content = document.getElementById('editor').value;
+        const fcontent = editor.value;
 
-        if (filename && content) {
-            download(filename, content);
+        if (fname && fcontent) {
+            download(fname, fcontent);
         } else {
 
             window.alert('The file could not be downloaded. The File name or content is missing.');
 
         }
     });
-    
+
 };

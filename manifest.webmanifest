@@ -11,7 +11,7 @@
   "orientation": "any",
   "screenshots": [
     {
-      "src": "screenshots/Screenshot.png",
+      "src": "./en/screenshots/Screenshot.png",
       "sizes": "1343x613",
       "type": "image/png"
     }
@@ -20,12 +20,13 @@
     {
       "name": "Editor",
       "url": "https://solarstudent121.github.io/Tech-Noter/editor",
-      "description": "Tech-Noter - Editor"
+      "description": "Tech-Noter - Editor",
+      "icon" : "./en/icons/icon.png"
     }
   ],
   "icons": [
     {
-        "src": "icons/icon.png",
+        "src": "./en/icons/icon.png",
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "any"
