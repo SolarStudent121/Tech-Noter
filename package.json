@@ -3,7 +3,5 @@
   "author": "Abhinav Shetty R",
   "license": "MIT",
   "version": "1.0.0",
-  "dependencies": {
-    "workbox-precaching": "^6.5.4"
-  }
+  "icon": "./en/icons/icon.png"
 }
