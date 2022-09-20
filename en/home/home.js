@@ -5,3 +5,4 @@ function redirect() {
 }
 document.getElementById('redir').addEventListener('click', redirect);
 
+navigator.serviceWorker.register("../sw.js");

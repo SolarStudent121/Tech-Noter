@@ -1,5 +1,7 @@
 'use strict'
 
+navigator.serviceWorker.register("../sw.js");
+
 const editor = document.getElementById('editor');
 
 function download(filename, content) {
