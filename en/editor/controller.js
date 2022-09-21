@@ -15,7 +15,6 @@ function download(filename, content) {
     element.setAttribute('href', fileUrl);
     element.setAttribute('download', filename);
     element.style.display = 'none';
-
     document.body.appendChild(element);
     element.click();
 
