@@ -1,7 +1,7 @@
 {
   "name": "Tech-Noter",
   "short_name": "Tech Noter",
-  "start_url": "https://solarstudent121.github.io/Tech-Noter/",
+  "start_url": "https://solarstudent121.github.io/Tech-Noter/en/",
   "display": "standalone",
   "description": "Tech-Noter - Home",
   "lang": "en",
@@ -19,7 +19,7 @@
   "shortcuts": [
     {
       "name": "Editor",
-      "url": "https://solarstudent121.github.io/Tech-Noter/editor",
+      "url": "https://solarstudent121.github.io/Tech-Noter/en/editor",
       "description": "Tech-Noter - Editor"
     }
   ],
