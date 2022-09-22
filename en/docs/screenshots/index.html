@@ -3,16 +3,19 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self';font-src 'self';style-src 'self'" ;>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self' https://code.jquery.com/jquery-3.6.1.min.js https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js; style-src 'self' https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css;">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tech-Noter - Docs</title>
-        <link rel="stylesheet" href="/en/bootstrap/bootstrap-5.2.1-dist/css/bootstrap.min.css">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
         <link rel="manifest" href="/manifest.webmanifest">
         <base href="Tech-Noter">
-        <link rel="icon" href="/en/icons/icon.png">
+        <link rel="icon" href="./icon.png">
         <meta name="description" content="Tech-Noter - Home">
-        <link rel="apple-touch-icon" href="../icons/icon.png">
+        <link rel="apple-touch-icon" href="./icon.png">
 
     </head>
 
@@ -20,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="../">
-                    <img src="/en/icons/icon.png" width="30" height="30" class="d-inline-block align-text-top" alt="">
+                    <img src="./icon.png" width="30" height="30" class="d-inline-block align-text-top" alt="">
                     Tech-Noter</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,13 +34,12 @@
                 </div>
             </div>
         </nav>
-        <script src="/en/bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
         <script src="../doc.js" defer></script>
         <br>
         <div class="bg-dark container.fluid">
             <h1 class="text-white display-3 p-3"><u>Screenshots</u>:</h1>
             <div class="text-center">
-            <img src="../screenshots/Screenshot.png" alt="screenshot-1" width="800" height="400">
+                <img src="../screenshots/Screenshot.png" alt="screenshot-1" width="800" height="400">
             </div>
             <br>
             <br>
