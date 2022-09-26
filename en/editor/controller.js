@@ -8,8 +8,7 @@ function download(filename, content) {
 
     const element = document.createElement('a');
 
-    const blob = new Blob([content], { type: 'plain/text' });
-
+    const blob = new Blob([content], { type: 'text/plain' });
     const fileUrl = URL.createObjectURL(blob);
 
     element.setAttribute('href', fileUrl);
@@ -29,10 +28,23 @@ function bold() {
     }
 }
 
-function clear() {
+function clearfont() {
     editor.style.fontWeight = "normal";
     editor.style.textAlign = "left";
     editor.style.fontStyle = "normal";
+    editor.style.textDecoration = "none";
+}
+
+function cleartext() {
+    editor.value = "";
+}
+
+function removeedittext() {
+    editor.style.fontWeight = "normal";
+    editor.style.textAlign = "left";
+    editor.style.fontStyle = "normal";
+    editor.style.textDecoration = "none";
+    editor.value = "";
 }
 
 function left() {
@@ -55,6 +67,14 @@ function italic() {
     }
 }
 
+function underline() {
+    if (editor.style.textDecoration == "underline") {
+        editor.style.textDecoration = "none";
+    } else {
+        editor.style.textDecoration = "underline";
+    }
+}
+
 $(document).ready(function () {
     function hidePreloader() {
         var preloader = $('#preloader');
@@ -67,9 +87,12 @@ $(document).ready(function () {
 });
 
 window.onload = () => {
+
     document.getElementById('bold').addEventListener('click', bold)
 
     document.getElementById('italic').addEventListener('click', italic)
+
+    document.getElementById('underline').addEventListener('click', underline)
 
     document.getElementById('a-l').addEventListener('click', left)
 
@@ -77,7 +100,11 @@ window.onload = () => {
 
     document.getElementById('a-r').addEventListener('click', right)
 
-    document.getElementById('clear').addEventListener('click', clear)
+    document.getElementById('clefont').addEventListener('click', clearfont)
+
+    document.getElementById('cletext').addEventListener('click', cleartext)
+
+    document.getElementById('remoall').addEventListener('click', removeedittext)
 
     document.getElementById('save').addEventListener('click', () => {
 
@@ -88,9 +115,7 @@ window.onload = () => {
         if (fname && fcontent) {
             download(fname, fcontent);
         } else {
-
             window.alert('The file could not be downloaded. The File name or content is missing.');
-
         }
     });
 
