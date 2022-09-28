@@ -4,19 +4,20 @@ navigator.serviceWorker.register("../sw.js");
 
 const editor = document.getElementById('editor');
 
+editor.style.wordSpacing = 'normal';
+editor.style.textRendering = 'optimizeSpeed'
+
 function download(filename, content) {
 
     const element = document.createElement('a');
 
     const blob = new Blob([content], { type: 'text/plain' });
     const fileUrl = URL.createObjectURL(blob);
-
     element.setAttribute('href', fileUrl);
     element.setAttribute('download', filename);
     element.style.display = 'none';
     document.body.appendChild(element);
     element.click();
-
     document.body.removeChild(element);
 };
 
@@ -87,6 +88,7 @@ $(document).ready(function () {
 });
 
 window.onload = () => {
+    editor.style.lineBreak = true;
 
     document.getElementById('bold').addEventListener('click', bold)
 

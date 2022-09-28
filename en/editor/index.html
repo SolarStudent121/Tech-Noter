@@ -53,7 +53,7 @@ SOFTWARE.
         </div>
 
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" hidden="true" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" hidden="true" id="nav" role="navigation">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="../home">
                     <img src="../icons/icon.png" width="30" height="30" class="d-inline-block align-text-top"
@@ -72,9 +72,9 @@ SOFTWARE.
             </div>
         </nav>
 
-        <div class="container.fluid bg-black p-5 d-flex-row" hidden="true" id="body">
+        <div class="container.fluid bg-black p-5 d-flex-row" hidden="true" id="body" role="main">
             <div class="col-p-4" spellcheck="true" for="editor">
-                <input type="text" id="docname" class="form-input bg-dark  rounded-1  h5 .d-flex text-white"
+                <input type="text" id="docname" class="form-input bg-dark  rounded  h5 .d-flex text-white"
                     placeholder="Enter file name..." value="doc" required></input>
                 <button class="btn btn-primary" id="save" type="submit">Download</button>
                 <div class="btn-group">
@@ -106,7 +106,7 @@ SOFTWARE.
                 </div>
                 <div class="col-md-10 col-sm-9">
                     <div class="editpad">
-                        <textarea id="editor" class="form-input rounded-3 " cols="200" rows="20" contenteditable="true"
+                        <textarea id="editor" class="form-input rounded " cols="200" rows="20" contenteditable="true"
                             placeholder="Enter text..."></textarea>
                     </div>
                 </div>
