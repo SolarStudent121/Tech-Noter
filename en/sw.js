@@ -8,17 +8,17 @@ self.addEventListener('install', function (event) {
         "https://code.jquery.com/jquery-3.6.1.min.js",
         "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js",
         "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css",
-        "home/styles.css",
-        "home/index.html",
-        "home/home.js",
-        "editor/styles.css",
-        "editor/index.html",
-        "editor/controller.js",
-        "docs/styles.css",
-        "docs/screenshots/index.html",
-        "docs/index.html",
-        "docs/doc.js",
-        "bootstrap/bootstrap-icons-1.9.1/bootstrap-icons.css"
+        "./home/styles.css",
+        "./home/index.html",
+        "./home/home.js",
+        "./editor/styles.css",
+        "./editor/index.html",
+        "./editor/controller.js",
+        "./docs/styles.css",
+        "./docs/screenshots/index.html",
+        "./docs/index.html",
+        "./docs/doc.js",
+        "./bootstrap/bootstrap-icons-1.9.1/bootstrap-icons.css"
     ]
     event.waitUntil(
         caches.open('tech-noter-v1').then(function (cache) {
