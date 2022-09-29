@@ -20,7 +20,11 @@
     {
       "name": "Editor",
       "url": "https://solarstudent121.github.io/Tech-Noter/en/editor",
-      "description": "Tech-Noter - Editor"
+      "description": "Tech-Noter - Editor",
+      "icon": "icons/icon.png",
+      "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
     }
   ],
   "icons": [
