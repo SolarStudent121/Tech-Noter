@@ -1,10 +1,6 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js');
 
-
-crossOriginIsolated = false;
-
-
 self.addEventListener('install', function (event) {
     const data = [
         "https://github.com/SolarStudent121/Tech-Noter/blob/1a8bcd89abce1f39390501266ec36dae6059f4c9/en/bootstrap/bootstrap-icons-1.9.1",
