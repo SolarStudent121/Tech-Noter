@@ -21,7 +21,6 @@ self.addEventListener('install', function (event) {
         "/Tech-Noter/en/sw.js",
         "/Tech-Noter/en/icons/icon.png",
         "/Tech-Noter/en/manifest.webmanifest",
-        "/Tech-Noter/en/",
         "/Tech-Noter/en/screenshots/Screenshot.png",
         "/Tech-Noter/en/bootstrap/bootstrap-icons-1.9.1/bootstrap-icons.css",
         "/Tech-Noter/en/docs/screenshots/icon.png"
